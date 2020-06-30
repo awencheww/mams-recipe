@@ -1,0 +1,522 @@
+/* GLOBAL */
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Tajawal", serif;
+  font-weight: 500;
+  background: #f3f1f1;
+}
+.container {
+  width: 60%;
+  margin: auto;
+  text-align: center;
+}
+a {
+  color: #000;
+  text-decoration: none;
+  font-family: "Tajawal", sans-serif;
+  font-size: 1.4em;
+}
+a:hover{
+  color: #08da08;
+}
+a.active {
+  color: #08da08;
+  text-decoration: underline;
+}
+section a {
+  color: rgb(8, 184, 160);
+}
+p {
+  font-family: "Tajawal", sans-serif;
+  font-weight: normal;
+}
+h1.brand-title {
+  color: #000;
+  font-family: "Pacifico", sans-serif;
+  font-size: 1.3em;
+}
+h1.header-title {
+  position: relative;
+  top: 30%;
+  color: #fff;
+  font-family: "Pacifico", sans-serif;
+  font-size: 10em;
+  text-shadow: 2px 5px 10px #09ca29;
+  font-style: italic;
+}
+h1.header-welcome {
+  font-family: "Tajawal", sans-serif;
+  position: relative;
+  top: 38%;
+  left: 2%;
+  text-align: center;
+  color: #fff;
+}
+h1, h1.title {
+  color: #000;
+  font-family: "Pacifico", sans-serif;
+}
+/* END GLOBAL */
+
+/* HEADER */
+header#main-header {
+  width: 100%;
+  height: 768px;
+  background: url("/img/food/basil-dinner-dish.jpg") no-repeat;
+  background-size: 100% 768px;
+  background-position: center;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+/* END HEADER */
+
+/* MAIN MENU */
+button#showMenu {
+  position: absolute;
+  top: 20px;
+  right: 15px;
+}
+button#hideMenu{
+  visibility: hidden;
+  position: absolute;
+  top: 20px;
+  right: 15px;
+}
+.hide-menu {
+  visibility: hidden;
+  height: 0px;
+}
+div#main-menu nav ul li {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  margin-bottom: 10px;
+}
+.nav-wrapper {
+  width: 100%;
+  height: auto;
+  background: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  float: left;
+  box-shadow: 0px .5px 4px #bbbaba;
+  z-index: 1000;
+}
+
+#branding {
+  float: left;
+  margin: 0;
+  position: relative;
+  font-size: 14px;
+  font-style: italic;
+}
+/* END MAIN MENU */
+
+/* MAIN > #popular */
+#popular {
+  padding: 20px 0 20px 0;
+  font-family: "Tajawal", sans-serif;
+}
+#popular h1.title {
+  margin: 10px 0 20px 0;
+  font-size: 20px;
+}
+#popular section.popular-recipe ul.makes-serves,
+#popular section.popular-recipe ul.ingredients {
+  font-family: "Tajawal", sans-serif;
+  font-weight: 550;
+  font-size: 1.2em;
+  text-align: left;
+  margin-left: 10px;
+}
+#popular section.popular-recipe ul.makes-serves,
+#popular section.popular-recipe ul.ingredients dl {
+  color: #108510;
+  font-size: 1.5em;
+}
+section.popular-recipe ul.ingredients li {
+  list-style-type: disc;
+  margin-left: 35px;
+}
+section.popular-recipe {
+  margin: 0 10px 20px 0;
+  background: #fff;
+  padding: 10px;
+}
+section.popular-recipe h1 {
+  margin: 10px 0 10px 0;
+}
+section.popular-recipe a:hover {
+  color: #08da08;
+  text-decoration: underline;
+}
+/* END #POPULAR */
+
+/* WHYUS */
+#whyus{
+  background: #fff;
+  padding: 10px 0 0 0;
+  margin: 0 0 20px 0;
+}
+#whyus h1.title {
+  margin: 10px 0 20px 0;
+  font-size: 20px;
+}
+section.whyus-recipe {
+  margin: 0 10px 20px 0;
+  background: #fff;
+  padding: 10px;
+  width: 35%;
+  display: inline-table;
+}
+section.whyus-recipe img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  image-rendering: pixelated;
+}
+/* END WHYUS */
+
+/* CONTACTS */
+#contacts {
+  margin: 10px 0 20px 0;
+}
+#contacts h1.title {
+  margin: 10px 0 20px 0;
+  font-size: 20px;
+}
+#form {
+  margin: 0;
+  padding: 0;
+}
+#form input {
+  display: inline-block;
+  width: 92%;
+  margin: 0 0 10px 0;
+  border: none;
+  box-shadow: 0 2px 4px #bbbaba;
+  background: #fff;
+}
+#form input#name,
+#form input#email,
+#form input#submit {
+  padding: 10px;
+}
+#contacts #form input#name,
+#contacts #form input#email {
+    width: 49.7%;
+    position: relative;
+    display: inline-flex;
+}
+#form input#submit {
+  cursor: pointer;
+}
+#contacts #form input#submit:hover {
+  background: #08da08;
+  color: #fff;
+}
+#form textarea#message {
+  width: 100%;
+  height: 100px;
+  border: none;
+  margin: 0 0 10px 0;
+  border: none;
+  box-shadow: 0 2px 4px #bbbaba;
+  padding: 10px 0 0 0;
+  text-indent: 10px;
+  font-family: Helvetica, sans-serif;
+}
+/* END CONTACTS */
+
+/* FOOTER */
+footer {
+  width: 100%;
+  height: auto;
+  background: #fff;
+  font-size: .8em;
+  margin: 0;
+  padding: 0;
+}
+footer hr {
+margin: 20px 0 0 0;
+}
+footer h1.title {
+  margin: 10px 0 10px 0;
+  font-size: 1.5em;
+  font-family: "Tajawal", sans-serif;
+}
+footer #about-us, footer #newsletter, footer #get-in-touch {
+  display: inline-table;
+  width: 33%;
+  height: auto;
+  padding: 5px;
+  font-size: .8em;
+  margin: 20px 0 0 0;
+}
+footer #about-us {
+  text-align: left;
+}
+footer #newsletter input,
+footer #newsletter button {
+  margin: 10px 0 0 0;
+  display: block;
+} 
+footer #newsletter input {
+  width: 100%;
+  height: 30px;
+  padding: 5px;
+  font-family: "Tajawal", sans-serif;
+}
+footer #newsletter button {
+  position: relative;
+  width: 60%;
+  height: 30px;
+  padding: 5px;
+  border: 0px;
+  cursor: pointer;
+  background: #08da08;
+  color: #fff;
+}
+
+footer #get-in-touch a:hover {
+  color: #08da08;
+}
+footer #get-in-touch a i {
+  margin: 10px 0 0 10px;
+}
+
+footer #about-us a {
+  color: #08b8a0;
+  text-decoration: underline;
+}
+footer #about-us p {
+  font-size: 13px;
+}
+/* END FOOTER */
+
+/* MEDIA QUERIES */
+@media screen and (min-width: 768px) {
+  button#showMenu, button#hideMenu {
+    visibility: hidden;
+    opacity: 0;
+    z-index: -1;
+  }
+  #main-menu {
+    visibility: visible;
+    height: auto;
+    float: right;
+    margin-top: 8px;
+  }
+  #main-menu nav#navbar ul li {
+    display: inline;
+    margin-left: 10px;
+  }
+  header#main-header h1.landing-title {
+    padding: 30% 0 0 0;
+  }
+
+  /* POPULAR */
+  section.popular-recipe {
+    width: 45%;
+    height: auto;
+    display: inline-table;
+    padding: 0;
+  }
+  section.popular-recipe img {
+    width: 100%;
+    height: 200px;
+  }
+
+  /* WHYUS */
+  section.whyus-recipe {
+    width: 30%;
+    height: auto;
+    display: inline-table;
+    padding: 0;
+  }
+  section.whyus-recipe img {
+    width: 100%;
+    height: 200px;
+  }
+
+  #contacts #form {
+    margin: 0;
+    padding: 0;
+  }
+  #contacts #form input {
+    width: 92%;
+    height: 50px;
+    margin: 0 0 10px 0;
+    border: none;
+    box-shadow: 0 2px 4px #bbbaba;
+    background: #fff;
+    font-size: 20px;
+    font-family: "Tajawal", sans-serif;
+  }
+  #contacts #form input#name,
+  #contacts #form input#email,
+  #contacts #form input#submit {
+    padding: 10px;
+  }
+  #contacts #form input#name,
+  #contacts #form input#email {
+    width: 49.5%;
+    position: relative;
+    display: inline-flex;
+  }
+  #contacts #form input#submit {
+    width: auto;
+    position: relative;
+    display: block;
+  }
+  #contacts #form textarea#message {
+    width: 100%;
+    height: 150px;
+    border: none;
+    margin: 0 0 10px 0;
+    border: none;
+    box-shadow: 0 2px 4px #bbbaba;
+    padding: 10px 0 0 0;
+    text-indent: 10px;
+    font-family: "Tajawal", sans-serif;
+    font-size: 20px;
+  }
+  
+} /* END MEDIA QUERY */
+
+@media screen and (max-width: 1024px) {
+  #branding {
+    width:100%;
+    text-align: center;
+  }
+  #main-menu {
+    width: 100%;
+    margin: 5px 0 10px 0;
+  }
+} /* END MEDIA QUERY */
+
+
+@media screen and (min-width: 375px) and (max-width: 767px) {
+  #branding {
+    width: 100%;
+    text-align: center;
+  }
+  #main-menu {
+    padding-top: 60px;
+  }
+  section.popular-recipe {
+    width: 100%;
+    height: auto;
+    display: inline-table;
+    padding: 0;
+    margin-bottom: 10px;
+  }
+  section.popular-recipe img {
+    width: 100%;
+    height: 150px;
+  }
+  h1.header-title {
+    position: relative;
+    top: 35%;
+    color: #fff;
+    font-family: "Pacifico", sans-serif;
+    font-size: 5em;
+    text-shadow: 2px 5px 10px #09ca29;
+    font-style: italic;
+  }
+  footer #about-us,
+  footer #newsletter,
+  footer #get-in-touch {
+    display: block;
+    width: 100%;
+    height: auto;
+    padding: 5px;
+    font-size: .8em;
+    margin: 20px 0 0 0;
+    text-align: center;
+  }
+  footer #newsletter input,
+  footer #newsletter button {
+    margin: 10px 0 0 0;
+    display: inline-block;
+  }
+  footer #newsletter button {
+    width: 50%;
+  }
+
+  #contacts #form input#name,
+  #contacts #form input#email {
+    width: 100%;
+    position: relative;
+    display: inline-flex;
+  }
+  #contacts #form input#submit {
+    width: 100%;
+  }
+} /* END MEDIA QUERY */
+
+@media screen and (min-width: 320px) and (max-width: 425px) {
+  #branding {
+    width: 100%;
+    text-align: center;
+    float: none;
+  }
+  h1.header-title {
+    position: relative;
+    top: 35%;
+    color: #fff;
+    font-family: "Pacifico", sans-serif;
+    font-size: 3.5em;
+    text-shadow: 2px 5px 10px #09ca29;
+    font-style: italic;
+  }
+  #main-menu {
+    padding: 0;
+  }
+  section.popular-recipe {
+    width: 100%;
+    height: auto;
+    display: inline-table;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  section.popular-recipe img {
+    width: 100%;
+    height: 150px;
+  }
+
+  section.popular {
+    width: 100%;
+    height: auto;
+    display: inline-table;
+    padding: 0;
+  }
+  section.popular h1 {
+    margin: 10px 0 10px 0;
+  }
+  section.popular img {
+    width: 200px;
+    height: 200px;
+  }
+  #contacts #form input#name,
+  #contacts #form input#email {
+    width: 100%;
+    position: relative;
+    display: inline-flex;
+  }
+  #contacts #form input#submit {
+    width: 100%;
+  }
+
+  footer {
+    width: 100%;
+    height: auto;
+    padding:0;
+    margin: 0;
+  }
+} /* END MEDIA QUERY */
